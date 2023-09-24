@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html  lang="pt_br">
+        <head>
+            <title>HTML - Layouts </title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                * {
+                   box-sizing: border-box;
+              }
+  
+              body {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #29229E;
+              }
+  
+              /* Style the header */
+              header {
+                background-color: #cc9999;
+                padding: 20
+                px;
+                text-align: center;
+                font-size: 25px;
+                color: #364DE0;
+              }
+  
+              /* Create two columns/boxes that floats next to each other */
+              nav {
+                float: left;
+                width: 30%;
+                height: 300px; /* only for demostration, should be removed */ 
+                background: #ccc;
+                padding: 20px;
+              }
+  
+              /* Style the list inside the menu */
+              nav ul {
+                list-style-type: none;
+                padding: 0;
+              }
+  
+              article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px; /* only for demostration, should be removed */      
+              }
+  
+              /* Clear floats after the columns */
+              section::after {
+                background: #ccc;
+                content: "";
+                display: table;
+                clear: both;
+              }
+  
+              /* Style the footer */
+              footer {
+                background-color: #cc9999;
+                padding: 20px;
+                text-align: center;
+                font-size: 2.0rem;
+                color: #364DE0;
+              }
+  
+              /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+              @media (max-width: 600px) {
+                nav, article {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+              </style>
+        </head>
+        <body>
+              
+          <header>
+            <img width="800" src="Título da Página3.png"/>
+          </header>
+
+            <section>
+
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="./06-Formularios.html">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <article>
+                    <h1>Título Artigo</h1>
+
+                    <p> A Engenharia de Usabilidade (também denominada Design Centrado no Usuário) trata da construção de sistemas melhores através da compreensão de quem são usuários finais e do envolvimento de usuários nos requisitos, no design de interface com o usuário e nos esforços de teste.
+                  O que é design e usabilidade?
+                  Usabilidade do design
+
+                  A usabilidade diz respeito a facilidade de uso de determinada função ou utilidade. Durante o processo de criação do design, um dos pontos da usabilidade que deve ser levado em conta é: o seu design pode ser facilmente usado</p>
+
+                </article>
+
+            </section>
+
+            <footer>
+                <p>Desenvolvido por Regis Trinity</p>
+            </footer>
+
+        </body>
+</html>

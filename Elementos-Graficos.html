@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./xcss/graficos.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <h1>Elementos Graficos</h1>
+
+    <div id="grafico-02">
+        <img class="filtro" src="./myspiderwebb.jpg" alt="Spider">
+
+    </div>
+
+    <div id="grafico-02">
+
+    </div>
+     
+    <div>
+
+    <canvas id="canvas"></canvas>
+
+    </div>
+
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getcontext("2d");
+        ctx.fillStyle = "#00ff99";
+        ctx.fillRect(80, 160, 80, 80);
+    </script>
+</body>
